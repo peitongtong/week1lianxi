@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':week1lianxi2', ':peitongtong20191203'
 rootProject.name='week1lianxi'
