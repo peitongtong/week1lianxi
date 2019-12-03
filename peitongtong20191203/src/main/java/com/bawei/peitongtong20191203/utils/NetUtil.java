@@ -129,6 +129,13 @@ public class NetUtil {
         return null;
     }
     public boolean hasNet(Context context){
-        return false;
+        ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo info = manager.getActiveNetworkInfo();
+        if (info!=null&&info.isAvailable()){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 }
