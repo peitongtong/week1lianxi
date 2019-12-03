@@ -3,6 +3,8 @@ package com.bawei.peitongtong20191203.view.adapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bawei.peitongtong20191203.model.Bean;
 
@@ -33,5 +35,9 @@ public class MyAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         return null;
+    }
+    class ViewHolder{
+        TextView textView1,textView2;
+        ImageView imageView;
     }
 }
