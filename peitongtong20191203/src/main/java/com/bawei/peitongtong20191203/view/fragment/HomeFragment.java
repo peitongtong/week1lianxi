@@ -12,11 +12,13 @@ public class HomeFragment extends BaseFragment {
 
     private TextView text_view;
     private ImageView image_view;
+    private TextView text2;
 
     @Override
     protected void initView(View view) {
         text_view = view.findViewById(R.id.text_view);
         image_view = view.findViewById(R.id.image_view);
+        text2 = view.findViewById(R.id.text2);
     }
 
     @Override
@@ -29,9 +31,11 @@ public class HomeFragment extends BaseFragment {
         if (NetUtil.getNetUtil().hasNet(getActivity())){
             text_view.setVisibility(View.VISIBLE);
             image_view.setVisibility(View.GONE);
+            text2.setVisibility(View.GONE);
         }else {
             text_view.setVisibility(View.GONE);
             image_view.setVisibility(View.VISIBLE);
+            text2.setVisibility(View.VISIBLE);
         }
     }
 }

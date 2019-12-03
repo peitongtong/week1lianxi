@@ -87,7 +87,9 @@ public class MainActivity extends BaseActivity {
             }
         });
     }
-
+    public void jump(){
+        view_pager.setCurrentItem(0);
+    }
     @Override
     protected void initView() {
         view_pager = findViewById(R.id.view_pager);

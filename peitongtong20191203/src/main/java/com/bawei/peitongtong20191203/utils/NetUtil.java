@@ -129,6 +129,6 @@ public class NetUtil {
         return null;
     }
     public boolean hasNet(Context context){
-        return true;
+        return false;
     }
 }
